@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="ex-app">
+<head>
+    <meta charset="utf-8" />
+    <title>ex-app</title>
+
+    <!-- build:css assets/css/libs.css -->
+    <!-- Move all css files and scripts to bottom -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/angular-gridster/angular-gridster.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/libs/ngtoast/ngToast.css" />
+    <link rel="stylesheet" type="text/css" href="assets/libs/bootstrap/css/bootstrap.css" />
+    <!-- endbuild -->
+
+    <!-- build:css assets/css/theme/base.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/base/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/base/bootsrap.css" />
+    <!-- endbuild -->
+
+</head>
+<body ng-controller="appController as rootCtrl" class="{{rootCtrl.theme}}">
+    <div class="content" ui-view>
+        loading ....
+    </div>
+
+    <!-- build:js assets/js/libs.js -->
+    <script src="assets/libs/angular/angular.js"></script>
+    <script src="assets/libs/angular-animate/angular-animate.js"></script>
+    <script src="assets/libs/angular-cache/angular-cache.js"></script>
+    <script src="assets/libs/angular-gridster/angular-gridster.js"></script>
+    <script src="assets/libs/angular-sanitize/angular-sanitize.js"></script>
+    <script src="assets/libs/angular-ui-router/angular-ui-router.js"></script>
+    <script src="assets/libs/highcharts-ng/highcharts-ng.js"></script>
+    <script src="assets/libs/javascript-detect-element-resize/detect-element-resize.js"></script>
+    <script src="assets/libs/jquery/jquery.js"></script>
+    <script src="assets/libs/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/libs/lodash/lodash.js"></script>
+    <script src="assets/libs/moment/moment.js"></script>
+    <script src="assets/libs/ngtoast/ngToast.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.js"></script>
+
+    <script src="http://code.highcharts.com/stock/highstock.src.js"></script>
+
+    <script src="assets/js/utils/guid.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/app.js -->
+    <!-- # Modules / Routes / Configures / Controllers # -->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.routes.js"></script>
+    <script src="app/app.controller.js"></script>
+
+    <!-- # Shared # -->
+    <!-- core -->
+    <!--<script src="app/shared/core/core.module.js"></script>
+    <script src="app/shared/core/lodash/lodashWrapper.js"></script>
+    <script src="app/shared/core/moment/momentWrapper.js"></script>-->
+
+    <script src="assets/libs/ex-app-core/ex-app-core.min.js"></script>
+
+    <!-- # base -->
+    <!--<script src="app/components/base/base.controller.js"></script>
+    <script src="app/components/base/base.directive.js"></script>-->
+
+    <!-- # components/features -->
+
+    <script src="app/components/dashboard/dashboard.module.js"></script>
+    <script src="app/components/dashboard/dashboard.controller.js"></script>
+    <script src="app/components/dashboard/dashboard.service.js"></script>
+    <script src="app/components/dashboard/widgets/widgets.divContent.js"></script>
+    <script src="app/components/dashboard/widgets/widgets.divContent2.js"></script>
+    <script src="app/components/dashboard/widgets/widgets.divNoBase.js"></script>
+
+    <script src="app/components/about/about.module.js"></script>
+    <script src="app/components/about/about.controller.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<div class="navigation" ng-include="'app/shared/navigation/navigation.template.html'"></div>
+<div class="left-nav"></div>
+<div class="right-nav">
+    <button ng-click="pageCtrl.increaseCols()">++</button>
+    <button ng-click="pageCtrl.generateStandardItems()">StaticData</button>
+    <button ng-click="pageCtrl.generateStandardItemsByHttpData()">HttpData</button>
+    <button ng-click="pageCtrl.addOne()">add</button>
+    <button ng-click="pageCtrl.removeAll()">remove</button>
+    
+</div>
+<div class="content" style="margin: auto;">
+    <div gridster="pageCtrl.gridsterOptions">
+        <ul>
+            <li gridster-item="item" ng-repeat="item in pageCtrl.standardItems">
+                <div class="panel panel-default" style="height: 100%;">
+                    <div class="panel-heading layout">
+                        <div class="left">
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="right">
+                            <a title="settings" ng-click="openSettings(widget)"><i class="glyphicon glyphicon-cog"></i></a>
+                            <a title="Remove widget" ng-click="remove(widget)"><i class="glyphicon glyphicon-trash"></i></a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="panel-body">
+                        <ex-div-content ng-if="item.model.type === '1'" title="{{item.model.title}}"></ex-div-content>
+                        <ex-div-content2 ng-if="item.model.type === '2'"></ex-div-content2>
+                        <ex-div-no-base ng-if="item.model.type === '3'"></ex-div-no-base>
+                        <highchart ng-if="pageCtrl.isChartContent(item)" id="chart1" config="pageCtrl.chartModel" class="span9"></highchart>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer"></div>

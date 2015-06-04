@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{698CF37A-DE1B-4706-B195-1B6BC32E784E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ex_app_fin</RootNamespace>
+    <AssemblyName>ex-app-fin</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="assets\img\" />
+    <Folder Include="assets\libs\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="app\app.controller.js" />
+    <Content Include="app\app.module.js" />
+    <Content Include="app\app.routes.js" />
+    <Content Include="app\components\about\about.controller.js" />
+    <Content Include="app\components\about\about.module.js" />
+    <Content Include="app\components\about\about.template.html" />
+    <Content Include="app\components\dashboard\dashboard.controller.js" />
+    <Content Include="app\components\dashboard\dashboard.module.js" />
+    <Content Include="app\components\dashboard\dashboard.service.js" />
+    <Content Include="app\components\dashboard\dashboard.template.html" />
+    <Content Include="app\components\dashboard\widgets\widgets.divContent.js" />
+    <Content Include="app\components\dashboard\widgets\widgets.divContent2.js" />
+    <Content Include="app\components\dashboard\widgets\widgets.divNoBase.js" />
+    <Content Include="app\shared\chart\chart.js" />
+    <Content Include="app\shared\navigation\navigation.controller.js" />
+    <Content Include="app\shared\navigation\navigation.template.html" />
+    <Content Include="assets\css\base\bootsrap.css" />
+    <Content Include="assets\css\base\main.css" />
+    <Content Include="assets\js\utils\guid.js" />
+    <Content Include="index.html" />
+    <Content Include="Gruntfile.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bower.json" />
+    <None Include="CHANGE.md" />
+    <None Include="package.json" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

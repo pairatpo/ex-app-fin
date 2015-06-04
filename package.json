@@ -1,0 +1,30 @@
+{
+    "name": "ex-app",
+    "version": "0.0.0",
+    "description": "ex-app",
+    "keywords": [
+        "ex-app"
+    ],
+    "homepage": "",
+    "license": "MIT",
+    "authors": [
+        "pairatpo <pairat.poombang@thomsonreuters.com>"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/foo/bar.git"
+    },
+    "dependencies": {
+        "grunt": "^0.4.5",
+        "grunt-bower-task": "^0.4.0",
+        "load-grunt-tasks": "^3.1.0",
+        "grunt-contrib-clean": "^0.6.0",
+        "grunt-contrib-copy": "^0.5.0",
+        "grunt-ng-annotate": "^0.10.0",
+        "grunt-usemin": "^2.0.2",
+        "grunt-contrib-uglify": "^0.4.0",
+        "grunt-contrib-cssmin": "^0.9.0",
+        "grunt-contrib-concat": "^0.3.0"
+    },
+    "devDependencies": {}
+}
