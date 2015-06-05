@@ -5,6 +5,15 @@
         .module('ex-app-dashboard')
         .controller('dashboardController', ctrl);
 
+    /**
+     * @name doSomething
+     * @desc Does something awesome
+     * @param $scope
+     * @param $state
+     * @param $window
+     * @param dashboardService
+     * @param _
+     */
     function ctrl($scope, $state, $window, dashboardService, _) {
 
         var _self = this;
@@ -75,8 +84,6 @@
                 'height': '300'
             }
         };
-
-
 
         function generateStandardItems() {
 

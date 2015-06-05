@@ -12,6 +12,7 @@
         _self.navItems = [
             { text: 'Dashboard', value: 'dashboard' },
             { text: 'About', value: 'about' },
+            { text: 'Apply', value: 'apply' },
             //{ text: 'Test', value: 'test' }
         ];
 

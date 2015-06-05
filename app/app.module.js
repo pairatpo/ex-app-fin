@@ -11,7 +11,8 @@
 
             'ex-app-core',
             'ex-app-dashboard',
-            'ex-app-about'
+            'ex-app-about',
+            'ex-app-apply'
         ]);
 
 })();

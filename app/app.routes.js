@@ -23,6 +23,13 @@
             templateUrl: 'app/components/about/about.template.html'
         });
 
+        states.push({
+            name: 'apply',
+            url: '/apply',
+            controller: 'applyController as pageCtrl',
+            templateUrl: 'app/components/apply/apply.template.html'
+        });
+
         // assign state objects to provider
         for (var i = 0; i < states.length; i++) { $stateProvider.state(states[i]); }
 
