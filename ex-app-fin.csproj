@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{698CF37A-DE1B-4706-B195-1B6BC32E784E}</ProjectGuid>
+    <ProjectGuid>{15179F7F-0162-442B-B914-3C9AE6627FA3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ex_app_fin</RootNamespace>
@@ -42,6 +42,9 @@
     <Content Include="app\components\about\about.controller.js" />
     <Content Include="app\components\about\about.module.js" />
     <Content Include="app\components\about\about.template.html" />
+    <Content Include="app\components\apply\apply.controller.js" />
+    <Content Include="app\components\apply\apply.module.js" />
+    <Content Include="app\components\apply\apply.template.html" />
     <Content Include="app\components\dashboard\dashboard.controller.js" />
     <Content Include="app\components\dashboard\dashboard.module.js" />
     <Content Include="app\components\dashboard\dashboard.service.js" />
@@ -54,6 +57,7 @@
     <Content Include="app\shared\navigation\navigation.template.html" />
     <Content Include="assets\css\base\bootsrap.css" />
     <Content Include="assets\css\base\main.css" />
+    <Content Include="assets\js\highstock.src.js" />
     <Content Include="assets\js\utils\guid.js" />
     <Content Include="index.html" />
     <Content Include="Gruntfile.js" />
